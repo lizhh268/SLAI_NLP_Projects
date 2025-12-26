@@ -1,0 +1,84 @@
+{
+  "encode": {
+    "train": {
+      "counts": {
+        "keep": 99966,
+        "src_len_sum": 2489914,
+        "tgt_len_sum": 2921534,
+        "src_len_max": 173,
+        "tgt_len_max": 177,
+        "drop_len_ratio": 17,
+        "src_len_avg": 24.90760858691955,
+        "tgt_len_avg": 29.225276594041976
+      },
+      "len_bins_src": {
+        "0-32": 77331,
+        "33-64": 21727,
+        "65-128": 898,
+        "129-256": 10
+      },
+      "len_bins_tgt": {
+        "0-32": 63977,
+        "33-64": 34637,
+        "65-128": 1345,
+        "129-256": 7
+      }
+    },
+    "valid": {
+      "counts": {
+        "keep": 500,
+        "src_len_sum": 13103,
+        "tgt_len_sum": 16258,
+        "src_len_max": 104,
+        "tgt_len_max": 112,
+        "src_len_avg": 26.206,
+        "tgt_len_avg": 32.516
+      },
+      "len_bins_src": {
+        "33-64": 131,
+        "0-32": 359,
+        "65-128": 10
+      },
+      "len_bins_tgt": {
+        "33-64": 193,
+        "0-32": 282,
+        "65-128": 25
+      }
+    },
+    "test": {
+      "counts": {
+        "keep": 200,
+        "src_len_sum": 7416,
+        "tgt_len_sum": 9215,
+        "src_len_max": 114,
+        "tgt_len_max": 142,
+        "src_len_avg": 37.08,
+        "tgt_len_avg": 46.075
+      },
+      "len_bins_src": {
+        "0-32": 87,
+        "33-64": 102,
+        "65-128": 11
+      },
+      "len_bins_tgt": {
+        "0-32": 63,
+        "33-64": 107,
+        "65-128": 29,
+        "129-256": 1
+      }
+    }
+  },
+  "spm": {
+    "src_model": "data/processed\\tok\\spm_src.model",
+    "tgt_model": "data/processed\\tok\\spm_tgt.model",
+    "src_vocab": "data/processed\\tok\\spm_src.vocab",
+    "tgt_vocab": "data/processed\\tok\\spm_tgt.vocab",
+    "vocab_size_src": 16000,
+    "vocab_size_tgt": 16000,
+    "spm_type": "unigram",
+    "max_tokens": 256,
+    "len_mode": "filter",
+    "ratio_min": 0.2,
+    "ratio_max": 5.0
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "train": {
+    "counts": {
+      "keep": 99983,
+      "drop_empty_after_clean": 17
+    },
+    "char_len": {
+      "zh_sum": 4219608,
+      "en_sum": 13782526,
+      "zh_max": 259,
+      "en_max": 745,
+      "zh_avg": 42.20325455327406,
+      "en_avg": 137.84869427802727
+    }
+  },
+  "valid": {
+    "counts": {
+      "keep": 500
+    },
+    "char_len": {
+      "zh_sum": 18488,
+      "en_sum": 71494,
+      "zh_max": 132,
+      "en_max": 546,
+      "zh_avg": 36.976,
+      "en_avg": 142.988
+    }
+  },
+  "test": {
+    "counts": {
+      "keep": 200
+    },
+    "char_len": {
+      "zh_sum": 10070,
+      "en_sum": 38655,
+      "zh_max": 138,
+      "en_max": 575,
+      "zh_avg": 50.35,
+      "en_avg": 193.275
+    }
+  }
+}

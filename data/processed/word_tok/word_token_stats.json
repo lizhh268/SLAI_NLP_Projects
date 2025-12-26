@@ -1,0 +1,117 @@
+{
+  "vocab": {
+    "min_freq_zh": 2,
+    "min_freq_en": 2,
+    "max_vocab_zh": 50000,
+    "max_vocab_en": 50000,
+    "vocab_size_zh": 31550,
+    "vocab_size_en": 29793,
+    "vocab_zh_path": "data/processed\\word_tok\\vocab_zh.json",
+    "vocab_en_path": "data/processed\\word_tok\\vocab_en.json",
+    "jieba_hmm": false
+  },
+  "encode": {
+    "train": {
+      "counts": {
+        "keep": 99965,
+        "src_len_sum": 2597173,
+        "tgt_len_sum": 2739381,
+        "src_len_max": 144,
+        "tgt_len_max": 135,
+        "drop_len_ratio": 18,
+        "src_len_avg": 25.98082328815085,
+        "tgt_len_avg": 27.403401190416645
+      },
+      "len_bins_src": {
+        "0-32": 73890,
+        "33-64": 25486,
+        "65-128": 587,
+        "129-256": 2
+      },
+      "len_bins_tgt": {
+        "0-32": 69137,
+        "33-64": 30249,
+        "65-128": 577,
+        "129-256": 2
+      },
+      "oov": {
+        "src_unk_tokens": 18678,
+        "tgt_unk_tokens": 15430,
+        "src_total_tokens": 2397243,
+        "tgt_total_tokens": 2539451,
+        "src_unk_rate": 0.007791450428679946,
+        "tgt_unk_rate": 0.006076116451941778
+      }
+    },
+    "valid": {
+      "counts": {
+        "keep": 500,
+        "src_len_sum": 11537,
+        "tgt_len_sum": 14221,
+        "src_len_max": 84,
+        "tgt_len_max": 104,
+        "src_len_avg": 23.074,
+        "tgt_len_avg": 28.442
+      },
+      "len_bins_src": {
+        "0-32": 409,
+        "33-64": 85,
+        "65-128": 6
+      },
+      "len_bins_tgt": {
+        "0-32": 321,
+        "33-64": 168,
+        "65-128": 11
+      },
+      "oov": {
+        "src_unk_tokens": 664,
+        "tgt_unk_tokens": 540,
+        "src_total_tokens": 10537,
+        "tgt_total_tokens": 13221,
+        "src_unk_rate": 0.0630160387206985,
+        "tgt_unk_rate": 0.04084411164057182
+      }
+    },
+    "test": {
+      "counts": {
+        "keep": 200,
+        "src_len_sum": 6080,
+        "tgt_len_sum": 7596,
+        "src_len_max": 84,
+        "tgt_len_max": 109,
+        "src_len_avg": 30.4,
+        "tgt_len_avg": 37.98
+      },
+      "len_bins_src": {
+        "0-32": 130,
+        "33-64": 67,
+        "65-128": 3
+      },
+      "len_bins_tgt": {
+        "0-32": 86,
+        "33-64": 95,
+        "65-128": 19
+      },
+      "oov": {
+        "src_unk_tokens": 644,
+        "tgt_unk_tokens": 478,
+        "src_total_tokens": 5680,
+        "tgt_total_tokens": 7196,
+        "src_unk_rate": 0.11338028169014085,
+        "tgt_unk_rate": 0.06642579210672596
+      }
+    }
+  },
+  "config": {
+    "max_tokens": 256,
+    "len_mode": "filter",
+    "ratio_min": 0.2,
+    "ratio_max": 5.0,
+    "special_tokens": [
+      "<pad>",
+      "<bos>",
+      "<eos>",
+      "<unk>"
+    ]
+  }
+}
