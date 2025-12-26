@@ -1,2 +1,23 @@
 # SLAI_NLP_Projects
-This is the GitHub Repository for Midterm and Final Project: Machine Translation between Chinese and English
+This is the GitHub Repository for Midterm and Final Project: Machine Translation between Chinese and English.
+
+
+```bash
+python inference.py
+  --ckpt ./outputs/tfm_rope_rs_s/best.pt
+  --ids ./data/processed/tok/valid.ids.jsonl
+  --clean ./data/processed/test.jsonl
+  --spm_tgt_model ./data/processed/tok/spm_tgt.model
+  --out_dir ./outputs/tfm_rope_rs_s_decode
+  --split_name valid
+  --decode beam
+  --beam_size 5
+  --len_penalty 0.6
+```
+
+
+``This project implemented Chinese→English neural machine translation using two representative paradigms: an RNN-based encoder–decoder with attention and a Transformer encoder–decoder trained from scratch, and further explored adapting a pretrained T5 model to the same task. Across experiments, the Transformer family consistently demonstrated superior translation quality and scalability compared with RNNs, mainly due to parallelizable self-attention and stronger modeling of long-range dependencies. In addition, decoding strategy mattered: beam search with a moderate length penalty reliably improved BLEU over greedy decoding, indicating that sequence-level search reduces local myopic decisions during generation.``
+
+``Our Transformer results highlight that training budget and architectural choices are critical. Under a limited budget (30 epochs), models were under-trained and did not fully converge, while extending training to 500 epochs substantially improved BLEU, confirming that optimization time was a major bottleneck. Scaling model capacity provided gains under short training, but did not guarantee improvements under long training, suggesting that larger models can be more sensitive to optimization and regularization hyperparameters. In architectural ablations, relative positional encoding (RoPE) improved test-set generalization over absolute sinusoidal encoding, and RMSNorm became most effective when paired with RoPE, yielding the best overall performance in our study. These findings support the view that inductive biases for relative position modeling and stable normalization can be beneficial for machine translation, particularly when training from scratch.``
+
+``Finally, our T5 experiments produced unexpectedly low BLEU for both fine-tuning and scratch training. Qualitative inspection showed fluent but weakly source-conditioned outputs, which is consistent with a practical mismatch between an English-centric pretrained tokenizer and Chinese inputs. This emphasizes an important practical trade-off: pretrained models are not universally beneficial unless their tokenization and pretraining data distribution align with the target task. Overall, the experiments demonstrate clear trade-offs among architecture, training efficiency, decoding, and practical implementation details, and reinforce that robust preprocessing and appropriate inductive biases are essential for achieving reliable NMT performance.``
