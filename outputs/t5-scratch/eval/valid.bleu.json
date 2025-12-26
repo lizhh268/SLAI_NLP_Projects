@@ -1,0 +1,17 @@
+{
+  "bleu": 2.852478335548552,
+  "tokenize": "13a",
+  "beam": 5,
+  "len_penalty": 0.6,
+  "max_src_len": 256,
+  "max_tgt_len": 256,
+  "vocab_size": 16000,
+  "spm_model": "outputs/t5_scratch_v16k/spm/spm_joint_v16000_unigram.model",
+  "t5_config": {
+    "d_model": 512,
+    "num_layers": 6,
+    "num_heads": 8,
+    "d_ff": 2048,
+    "dropout": 0.1
+  }
+}

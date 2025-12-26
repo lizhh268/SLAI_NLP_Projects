@@ -1,0 +1,5 @@
+{
+  "bleu": 4.358813385633523,
+  "signature": null,
+  "detail": "BLEU = 4.36 31.9/7.4/2.1/0.8 (BP = 0.971 ratio = 0.971 hyp_len = 6739 ref_len = 6940)"
+}

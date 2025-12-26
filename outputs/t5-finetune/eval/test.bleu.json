@@ -1,0 +1,8 @@
+{
+  "bleu": 2.662005309641322,
+  "tokenize": "13a",
+  "beam": 5,
+  "len_penalty": 0.6,
+  "max_src_len": 256,
+  "max_tgt_len": 256
+}

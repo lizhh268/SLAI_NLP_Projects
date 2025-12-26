@@ -1,0 +1,65 @@
+/afs/250010026/nlp/model/train_transformer_nmt.py:629: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = torch.cuda.amp.GradScaler(enabled=bool(args.fp16 and device.type == "cuda"))
+/afs/250010026/nlp/model/train_transformer_nmt.py:650: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=bool(args.fp16 and device.type == "cuda")):
+[schedule] steps_per_epoch=391 total_steps=12000 warmup_steps=1000
+[epoch 1] train_loss=7.4162 step=391 lr=0.0001564
+[epoch 1] valid_bleu=0.26 | N/A
+[epoch 2] train_loss=6.1246 step=782 lr=0.0003128
+[epoch 2] valid_bleu=0.56 | N/A
+[epoch 3] train_loss=5.5340 step=1173 lr=0.00039978
+[epoch 3] valid_bleu=1.45 | N/A
+[epoch 4] train_loss=5.0509 step=1564 lr=0.00039767
+[epoch 4] valid_bleu=2.91 | N/A
+[epoch 5] train_loss=4.6789 step=1955 lr=0.000393346
+[epoch 5] valid_bleu=3.67 | N/A
+[epoch 6] train_loss=4.3816 step=2346 lr=0.000386863
+[epoch 6] valid_bleu=4.51 | N/A
+[epoch 7] train_loss=4.1379 step=2737 lr=0.000378301
+[epoch 7] valid_bleu=5.18 | N/A
+[epoch 8] train_loss=3.9381 step=3128 lr=0.000367768
+[epoch 8] valid_bleu=5.59 | N/A
+[epoch 9] train_loss=3.7716 step=3519 lr=0.000355393
+[epoch 9] valid_bleu=6.14 | N/A
+[epoch 10] train_loss=3.6313 step=3910 lr=0.000341332
+[epoch 10] valid_bleu=6.32 | N/A
+[epoch 11] train_loss=3.5144 step=4301 lr=0.00032576
+[epoch 11] valid_bleu=7.02 | N/A
+[epoch 12] train_loss=3.4118 step=4692 lr=0.00030887
+[epoch 12] valid_bleu=7.14 | N/A
+[epoch 13] train_loss=3.3201 step=5083 lr=0.000290873
+[epoch 13] valid_bleu=7.07 | N/A
+[epoch 14] train_loss=3.2397 step=5474 lr=0.000271993
+[epoch 14] valid_bleu=7.40 | N/A
+[epoch 15] train_loss=3.1662 step=5865 lr=0.000252465
+[epoch 15] valid_bleu=7.30 | N/A
+[epoch 16] train_loss=3.0987 step=6256 lr=0.000232533
+[epoch 16] valid_bleu=7.65 | N/A
+[epoch 17] train_loss=3.0383 step=6647 lr=0.000212445
+[epoch 17] valid_bleu=7.02 | N/A
+[epoch 18] train_loss=2.9814 step=7038 lr=0.000192451
+[epoch 18] valid_bleu=7.98 | N/A
+[epoch 19] train_loss=2.9319 step=7429 lr=0.0001728
+[epoch 19] valid_bleu=7.46 | N/A
+[epoch 20] train_loss=2.8857 step=7820 lr=0.000153738
+[epoch 20] valid_bleu=7.57 | N/A
+[epoch 21] train_loss=2.8432 step=8211 lr=0.0001355
+[epoch 21] valid_bleu=7.71 | N/A
+[epoch 22] train_loss=2.8054 step=8602 lr=0.000118315
+[epoch 22] valid_bleu=7.43 | N/A
+[epoch 23] train_loss=2.7716 step=8993 lr=0.000102397
+[epoch 23] valid_bleu=7.67 | N/A
+[epoch 24] train_loss=2.7409 step=9384 lr=8.79441e-05
+[epoch 24] valid_bleu=7.71 | N/A
+[epoch 25] train_loss=2.7138 step=9775 lr=7.51361e-05
+[epoch 25] valid_bleu=7.46 | N/A
+[epoch 26] train_loss=2.6914 step=10166 lr=6.41326e-05
+[epoch 26] valid_bleu=8.17 | N/A
+[epoch 27] train_loss=2.6721 step=10557 lr=5.50707e-05
+[epoch 27] valid_bleu=7.57 | N/A
+[epoch 28] train_loss=2.6544 step=10948 lr=4.80634e-05
+[epoch 28] valid_bleu=7.70 | N/A
+[epoch 29] train_loss=2.6417 step=11339 lr=4.31979e-05
+[epoch 29] valid_bleu=8.00 | N/A
+[epoch 30] train_loss=2.6298 step=11730 lr=4.05349e-05
+[epoch 30] valid_bleu=7.67 | N/A
