@@ -1,5 +1,19 @@
 # SLAI_NLP_Projects
-This is the GitHub Repository for Midterm and Final Project: Machine Translation between Chinese and English
+This is the GitHub Repository for Midterm and Final Project: Machine Translation between Chinese and English.
+
+
+```bash
+python inference.py
+  --ckpt ./outputs/tfm_rope_rs_s/best.pt
+  --ids ./data/processed/tok/valid.ids.jsonl
+  --clean ./data/processed/test.jsonl
+  --spm_tgt_model ./data/processed/tok/spm_tgt.model
+  --out_dir ./outputs/tfm_rope_rs_s_decode
+  --split_name valid
+  --decode beam
+  --beam_size 5
+  --len_penalty 0.6
+```
 
 
 ``This project implemented Chinese→English neural machine translation using two representative paradigms: an RNN-based encoder–decoder with attention and a Transformer encoder–decoder trained from scratch, and further explored adapting a pretrained T5 model to the same task. Across experiments, the Transformer family consistently demonstrated superior translation quality and scalability compared with RNNs, mainly due to parallelizable self-attention and stronger modeling of long-range dependencies. In addition, decoding strategy mattered: beam search with a moderate length penalty reliably improved BLEU over greedy decoding, indicating that sequence-level search reduces local myopic decisions during generation.``
